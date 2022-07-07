@@ -1,0 +1,24 @@
+{
+    "fileFormatVersion": "1.0.0",
+    "itemInfoEntries": {
+        "0659935E-978F-4468-9832-42225E32E8F7": {
+            "author": "com.apple.CoreML",
+            "description": "External Metadata Overlay",
+            "name": "Metadata.json",
+            "path": "com.apple.CoreML/Metadata.json"
+        },
+        "3F2E476E-F4FA-4DAB-B145-845F4502D4EC": {
+            "author": "com.apple.CoreML",
+            "description": "External FeatureDescription Overlay",
+            "name": "FeatureDescriptions.json",
+            "path": "com.apple.CoreML/FeatureDescriptions.json"
+        },
+        "C7DEB760-36FB-474E-99C8-DCAD64E63E19": {
+            "author": "com.apple.CoreML",
+            "description": "CoreML Model Specification",
+            "name": "BetterSleep 1.mlmodel",
+            "path": "com.apple.CoreML/BetterSleep 1.mlmodel"
+        }
+    },
+    "rootModelIdentifier": "C7DEB760-36FB-474E-99C8-DCAD64E63E19"
+}
