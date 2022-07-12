@@ -8,23 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var username = ""
-    @State private var email = ""
-
+    @StateObject var order = Order()
+    
     var body: some View {
-        Form {
-            Section {
-                TextField("Username", text: $username)
-                TextField("Email", text: $email)
-            }
+        NavigationView {
+            Form {
+                Section {
+                    Picker("Select your cake type", selection: $order.type) {
+                        ForEach(Order.types.indices) {
+                            Text(Order.types[$0])
+                        }
+                    }
 
-            Section {
-                Button("Create account") {
-                    print("Creating account…")
+                    Stepper("Number of cakes: \(order.quantity)", value: $order.quantity, in: 3...20)
                 }
-                .disabled(username.isEmpty || email.isEmpty)
-            }
+                Section {
+                    Toggle("Any special requests?", isOn: $order.specialRequestEnabled.animation())
 
+                    if order.specialRequestEnabled {
+                        Toggle("Add extra frosting", isOn: $order.extraFrosting)
+
+                        Toggle("Add extra sprinkles", isOn: $order.addSprinkles)
+                    }
+                }
+                Section {
+                    NavigationLink {
+                        AddressView(order: order)
+                    } label: {
+                        Text("Delivery details")
+                    }
+                }
+           }
+            .navigationTitle("Cupcake Corner")
         }
     }
 }
@@ -35,12 +50,3 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct Response: Codable {
-    var results: [Result]
-}
-
-struct Result: Codable {
-    var trackId: Int
-    var trackName: String
-    var collectionName: String
-}
