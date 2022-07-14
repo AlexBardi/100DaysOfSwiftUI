@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE309C77287E76DD000AF7B6 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE309C76287E76DD000AF7B6 /* CheckoutView.swift */; };
+		BE309C78287E76DD000AF7B6 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE309C76287E76DD000AF7B6 /* CheckoutView.swift */; };
 		BE38F9AA287DA19400788940 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE38F9A9287DA19400788940 /* Order.swift */; };
 		BE38F9AB287DA19400788940 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE38F9A9287DA19400788940 /* Order.swift */; };
 		BE38F9AD287DA58200788940 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE38F9AC287DA58200788940 /* AddressView.swift */; };
@@ -41,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE309C76287E76DD000AF7B6 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		BE38F9A9287DA19400788940 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = SOURCE_ROOT; };
 		BE38F9AC287DA58200788940 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 		BEDD0679287903E200CB30E3 /* CupcakeCornerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCornerApp.swift; sourceTree = "<group>"; };
@@ -107,6 +110,7 @@
 				BEDD067A287903E200CB30E3 /* ContentView.swift */,
 				BE38F9A9287DA19400788940 /* Order.swift */,
 				BE38F9AC287DA58200788940 /* AddressView.swift */,
+				BE309C76287E76DD000AF7B6 /* CheckoutView.swift */,
 				BEDD067B287903E300CB30E3 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -309,6 +313,7 @@
 			files = (
 				BE38F9AA287DA19400788940 /* Order.swift in Sources */,
 				BE38F9AD287DA58200788940 /* AddressView.swift in Sources */,
+				BE309C77287E76DD000AF7B6 /* CheckoutView.swift in Sources */,
 				BEDD06A3287903E300CB30E3 /* ContentView.swift in Sources */,
 				BEDD06A1287903E300CB30E3 /* CupcakeCornerApp.swift in Sources */,
 			);
@@ -320,6 +325,7 @@
 			files = (
 				BE38F9AB287DA19400788940 /* Order.swift in Sources */,
 				BE38F9AE287DA58200788940 /* AddressView.swift in Sources */,
+				BE309C78287E76DD000AF7B6 /* CheckoutView.swift in Sources */,
 				BEDD06A4287903E300CB30E3 /* ContentView.swift in Sources */,
 				BEDD06A2287903E300CB30E3 /* CupcakeCornerApp.swift in Sources */,
 			);
