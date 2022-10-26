@@ -12,15 +12,15 @@
 		BE2021E928A353BF007044A4 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2021E828A353BF007044A4 /* Tests_macOS.swift */; };
 		BE2021EB28A353BF007044A4 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2021EA28A353BF007044A4 /* Tests_macOSLaunchTests.swift */; };
 		BE2021EC28A353BF007044A4 /* CoreDataProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2021C428A353BE007044A4 /* CoreDataProjectApp.swift */; };
-		BE2021ED28A353BF007044A4 /* CoreDataProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2021C428A353BE007044A4 /* CoreDataProjectApp.swift */; };
 		BE2021EE28A353BF007044A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2021C528A353BE007044A4 /* ContentView.swift */; };
-		BE2021EF28A353BF007044A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2021C528A353BE007044A4 /* ContentView.swift */; };
 		BE2021F028A353BF007044A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE2021C628A353BF007044A4 /* Assets.xcassets */; };
 		BE2021F128A353BF007044A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE2021C628A353BF007044A4 /* Assets.xcassets */; };
-		BE20220428A35468007044A4 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE20220328A35468007044A4 /* DataController.swift */; };
-		BE20220728A354B7007044A4 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE20220528A354B7007044A4 /* CoreDataProject.xcdatamodeld */; };
-		BE20220A28A35D9A007044A4 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE20220828A35D9A007044A4 /* Movie+CoreDataClass.swift */; };
-		BE20220B28A35D9A007044A4 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE20220928A35D9A007044A4 /* Movie+CoreDataProperties.swift */; };
+		BE636F1A2908D53200D8254F /* Candy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE636F162908D53200D8254F /* Candy+CoreDataClass.swift */; };
+		BE636F1B2908D53200D8254F /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE636F172908D53200D8254F /* Candy+CoreDataProperties.swift */; };
+		BE636F1C2908D53200D8254F /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE636F182908D53200D8254F /* Country+CoreDataClass.swift */; };
+		BE636F1D2908D53200D8254F /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE636F192908D53200D8254F /* Country+CoreDataProperties.swift */; };
+		BE7B246028B19C1C0056C5FA /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE20220328A35468007044A4 /* DataController.swift */; };
+		BEC48BE32908E02100C1A521 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE20220528A354B7007044A4 /* CoreDataProject.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +55,10 @@
 		BE2021EA28A353BF007044A4 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		BE20220328A35468007044A4 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		BE20220628A354B7007044A4 /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
-		BE20220828A35D9A007044A4 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BE20220928A35D9A007044A4 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BE636F162908D53200D8254F /* Candy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BE636F172908D53200D8254F /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BE636F182908D53200D8254F /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BE636F192908D53200D8254F /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,6 @@
 		BE2021BE28A353BE007044A4 = {
 			isa = PBXGroup;
 			children = (
-				BE20220828A35D9A007044A4 /* Movie+CoreDataClass.swift */,
-				BE20220928A35D9A007044A4 /* Movie+CoreDataProperties.swift */,
 				BE2021C328A353BE007044A4 /* Shared */,
 				BE2021D228A353BF007044A4 /* macOS */,
 				BE2021DB28A353BF007044A4 /* Tests iOS */,
@@ -107,6 +107,10 @@
 		BE2021C328A353BE007044A4 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				BE636F162908D53200D8254F /* Candy+CoreDataClass.swift */,
+				BE636F172908D53200D8254F /* Candy+CoreDataProperties.swift */,
+				BE636F182908D53200D8254F /* Country+CoreDataClass.swift */,
+				BE636F192908D53200D8254F /* Country+CoreDataProperties.swift */,
 				BE20220528A354B7007044A4 /* CoreDataProject.xcdatamodeld */,
 				BE20220328A35468007044A4 /* DataController.swift */,
 				BE2021C428A353BE007044A4 /* CoreDataProjectApp.swift */,
@@ -234,7 +238,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					BE2021CA28A353BF007044A4 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -311,10 +315,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE20220B28A35D9A007044A4 /* Movie+CoreDataProperties.swift in Sources */,
+				BE636F1B2908D53200D8254F /* Candy+CoreDataProperties.swift in Sources */,
 				BE2021EE28A353BF007044A4 /* ContentView.swift in Sources */,
-				BE20220A28A35D9A007044A4 /* Movie+CoreDataClass.swift in Sources */,
+				BE636F1C2908D53200D8254F /* Country+CoreDataClass.swift in Sources */,
+				BE7B246028B19C1C0056C5FA /* DataController.swift in Sources */,
+				BE636F1D2908D53200D8254F /* Country+CoreDataProperties.swift in Sources */,
 				BE2021EC28A353BF007044A4 /* CoreDataProjectApp.swift in Sources */,
+				BEC48BE32908E02100C1A521 /* CoreDataProject.xcdatamodeld in Sources */,
+				BE636F1A2908D53200D8254F /* Candy+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,8 +330,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE2021EF28A353BF007044A4 /* ContentView.swift in Sources */,
-				BE2021ED28A353BF007044A4 /* CoreDataProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,8 +347,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE2021EB28A353BF007044A4 /* Tests_macOSLaunchTests.swift in Sources */,
-				BE20220428A35468007044A4 /* DataController.swift in Sources */,
-				BE20220728A354B7007044A4 /* CoreDataProject.xcdatamodeld in Sources */,
 				BE2021E928A353BF007044A4 /* Tests_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +400,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -454,6 +459,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -537,9 +543,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -563,9 +571,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -625,9 +635,9 @@
 		BE2021FE28A353BF007044A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
@@ -643,9 +653,9 @@
 		BE2021FF28A353BF007044A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
