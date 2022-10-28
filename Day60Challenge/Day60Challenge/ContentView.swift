@@ -9,20 +9,39 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var users = [User]()
-    @State private var loading = "Loading"
+    @State private var loaded = false
+    
+    let columns = [
+        GridItem(.adaptive(minimum: 150))
+    ]
     
     var body: some View {
-        Text(loading)
-        List(users, id: \.id) { user in
-            VStack(alignment: .leading) {
-                Text(user.name)
-                    .font(.headline)
-                Text(user.email)
+        NavigationView {
+            List(users) {user in
+                NavigationLink {
+                    UserView(user: user)
+                } label: {
+                    HStack {
+                        Circle()
+                            .fill(user.isActive ? .green : .red)
+                            .frame(width: 30)
+                        VStack {
+                            Text(user.name)
+                                .font(.headline)
+                            Text(user.email)
+                                .font(.caption)
+                        }
+                    }
+                }
             }
         }
+        .navigationTitle("Friends")
         .task {
-            await loadData()
+            if (!loaded) {
+                await loadData()
+            }
         }
+        
     }
     
     func loadData() async {
@@ -36,14 +55,12 @@ struct ContentView: View {
             decoder.dateDecodingStrategy = .iso8601
             if let decodedResponse = try? decoder.decode([User].self, from: data) {
                 users = decodedResponse
-                loading = "Done loading!"
-            } else {
-                loading = "Decode Failed"
             }
         } catch {
-            print("Invalid Data")
-            print(error)
+            dump(error)
+            return
         }
+        loaded = true
     }
 }
 

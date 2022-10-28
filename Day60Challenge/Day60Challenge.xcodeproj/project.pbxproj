@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEA7D904290B8722009F3666 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA7D903290B8722009F3666 /* UserView.swift */; };
+		BEA7D907290B922B009F3666 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEA7D905290B922B009F3666 /* Model.xcdatamodeld */; };
+		BEA7D90C290B97C9009F3666 /* CachedUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA7D908290B97C9009F3666 /* CachedUser+CoreDataClass.swift */; };
+		BEA7D90D290B97C9009F3666 /* CachedUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA7D909290B97C9009F3666 /* CachedUser+CoreDataProperties.swift */; };
+		BEA7D90E290B97C9009F3666 /* CachedFriend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA7D90A290B97C9009F3666 /* CachedFriend+CoreDataClass.swift */; };
+		BEA7D90F290B97C9009F3666 /* CachedFriend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA7D90B290B97C9009F3666 /* CachedFriend+CoreDataProperties.swift */; };
 		BEC48BF1290A38A900C1A521 /* Day60ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC48BF0290A38A900C1A521 /* Day60ChallengeApp.swift */; };
 		BEC48BF3290A38A900C1A521 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC48BF2290A38A900C1A521 /* ContentView.swift */; };
 		BEC48BF5290A38AA00C1A521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC48BF4290A38AA00C1A521 /* Assets.xcassets */; };
@@ -16,7 +22,6 @@
 		BEC48C0F290A38AA00C1A521 /* Day60ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC48C0E290A38AA00C1A521 /* Day60ChallengeUITestsLaunchTests.swift */; };
 		BEC48C1C290A38D600C1A521 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC48C1B290A38D600C1A521 /* User.swift */; };
 		BEC48C1F290A3B3000C1A521 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC48C1E290A3B3000C1A521 /* Friend.swift */; };
-		BEC48C21290A3F6300C1A521 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC48C20290A3F6300C1A521 /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BEA7D903290B8722009F3666 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		BEA7D906290B922B009F3666 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		BEA7D908290B97C9009F3666 /* CachedUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedUser+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BEA7D909290B97C9009F3666 /* CachedUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BEA7D90A290B97C9009F3666 /* CachedFriend+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedFriend+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BEA7D90B290B97C9009F3666 /* CachedFriend+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedFriend+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BEC48BED290A38A900C1A521 /* Day60Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day60Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC48BF0290A38A900C1A521 /* Day60ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day60ChallengeApp.swift; sourceTree = "<group>"; };
 		BEC48BF2290A38A900C1A521 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,7 +61,6 @@
 		BEC48C0E290A38AA00C1A521 /* Day60ChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day60ChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BEC48C1B290A38D600C1A521 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BEC48C1E290A3B3000C1A521 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
-		BEC48C20290A3F6300C1A521 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,10 @@
 		BEC48BE4290A38A900C1A521 = {
 			isa = PBXGroup;
 			children = (
+				BEA7D908290B97C9009F3666 /* CachedUser+CoreDataClass.swift */,
+				BEA7D909290B97C9009F3666 /* CachedUser+CoreDataProperties.swift */,
+				BEA7D90A290B97C9009F3666 /* CachedFriend+CoreDataClass.swift */,
+				BEA7D90B290B97C9009F3666 /* CachedFriend+CoreDataProperties.swift */,
 				BEC48BEF290A38A900C1A521 /* Day60Challenge */,
 				BEC48C01290A38AA00C1A521 /* Day60ChallengeTests */,
 				BEC48C0B290A38AA00C1A521 /* Day60ChallengeUITests */,
@@ -103,6 +117,8 @@
 			children = (
 				BEC48BF0290A38A900C1A521 /* Day60ChallengeApp.swift */,
 				BEC48BF2290A38A900C1A521 /* ContentView.swift */,
+				BEA7D905290B922B009F3666 /* Model.xcdatamodeld */,
+				BEA7D903290B8722009F3666 /* UserView.swift */,
 				BEC48BF4290A38AA00C1A521 /* Assets.xcassets */,
 				BEC48BF6290A38AA00C1A521 /* Day60Challenge.entitlements */,
 				BEC48BF7290A38AA00C1A521 /* Preview Content */,
@@ -141,7 +157,6 @@
 			children = (
 				BEC48C1B290A38D600C1A521 /* User.swift */,
 				BEC48C1E290A3B3000C1A521 /* Friend.swift */,
-				BEC48C20290A3F6300C1A521 /* Response.swift */,
 			);
 			path = structs;
 			sourceTree = "<group>";
@@ -276,11 +291,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA7D90E290B97C9009F3666 /* CachedFriend+CoreDataClass.swift in Sources */,
+				BEA7D90F290B97C9009F3666 /* CachedFriend+CoreDataProperties.swift in Sources */,
+				BEA7D90D290B97C9009F3666 /* CachedUser+CoreDataProperties.swift in Sources */,
 				BEC48BF3290A38A900C1A521 /* ContentView.swift in Sources */,
 				BEC48BF1290A38A900C1A521 /* Day60ChallengeApp.swift in Sources */,
+				BEA7D904290B8722009F3666 /* UserView.swift in Sources */,
 				BEC48C1C290A38D600C1A521 /* User.swift in Sources */,
 				BEC48C1F290A3B3000C1A521 /* Friend.swift in Sources */,
-				BEC48C21290A3F6300C1A521 /* Response.swift in Sources */,
+				BEA7D90C290B97C9009F3666 /* CachedUser+CoreDataClass.swift in Sources */,
+				BEA7D907290B922B009F3666 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,6 +644,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BEA7D905290B922B009F3666 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BEA7D906290B922B009F3666 /* Model.xcdatamodel */,
+			);
+			currentVersion = BEA7D906290B922B009F3666 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BEC48BE5290A38A900C1A521 /* Project object */;
 }
