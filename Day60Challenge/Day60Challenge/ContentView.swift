@@ -32,12 +32,17 @@ struct ContentView: View {
         }
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
-            if let decodedResponse = try? JSONDecoder().decode(Response.self, from: data) {
-                users = decodedResponse.users
+            let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = .iso8601
+            if let decodedResponse = try? decoder.decode([User].self, from: data) {
+                users = decodedResponse
+                loading = "Done loading!"
+            } else {
+                loading = "Decode Failed"
             }
-            loading = "Done loading!"
         } catch {
             print("Invalid Data")
+            print(error)
         }
     }
 }
