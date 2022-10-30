@@ -26,7 +26,36 @@ extension CachedUser {
     @NSManaged public var name: String?
     @NSManaged public var isActive: Bool
     @NSManaged public var id: UUID?
-    @NSManaged public var cachedFriend: NSSet?
+    @NSManaged public var friends: NSSet?
+    
+    var wrappedTags: String {
+        tags ?? ""
+    }
+    var wrappedRegistered: Date {
+        registered ?? Date.distantPast
+    }
+    var wrappedAbout: String {
+        about ?? ""
+    }
+    var wrappedAddress: String {
+        address ?? ""
+    }
+    var wrappedEmail: String {
+        email ?? ""
+    }
+    var wrappedCompany: String {
+        company ?? ""
+    }
+    var wrappedName: String {
+        name ?? ""
+    }
+    var friendsArray: [CachedFriend] {
+        let set = friends as? Set<CachedFriend> ?? []
+        
+        return set.sorted {
+            $0.wrappedName < $1.wrappedName
+        }
+    }
 
 }
 
