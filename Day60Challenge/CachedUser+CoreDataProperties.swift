@@ -26,7 +26,7 @@ extension CachedUser {
     @NSManaged public var name: String?
     @NSManaged public var isActive: Bool
     @NSManaged public var id: UUID?
-    @NSManaged public var friends: NSSet?
+    @NSManaged public var cachedFriend: NSSet?
     
     var wrappedTags: String {
         tags ?? ""
@@ -50,7 +50,7 @@ extension CachedUser {
         name ?? ""
     }
     var friendsArray: [CachedFriend] {
-        let set = friends as? Set<CachedFriend> ?? []
+        let set = cachedFriend as? Set<CachedFriend> ?? []
         
         return set.sorted {
             $0.wrappedName < $1.wrappedName
