@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEC88A0F29121D5800CC9D65 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC88A0E29121D5800CC9D65 /* ImagePicker.swift */; };
 		BED76F10290F80B1005363B8 /* InstafilterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED76F0F290F80B1005363B8 /* InstafilterApp.swift */; };
 		BED76F12290F80B1005363B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED76F11290F80B1005363B8 /* ContentView.swift */; };
 		BED76F14290F80B2005363B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED76F13290F80B2005363B8 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BEC88A0E29121D5800CC9D65 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		BED76F0C290F80B1005363B8 /* Instafilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instafilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED76F0F290F80B1005363B8 /* InstafilterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstafilterApp.swift; sourceTree = "<group>"; };
 		BED76F11290F80B1005363B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				BED76F0F290F80B1005363B8 /* InstafilterApp.swift */,
 				BED76F11290F80B1005363B8 /* ContentView.swift */,
+				BEC88A0E29121D5800CC9D65 /* ImagePicker.swift */,
 				BED76F13290F80B2005363B8 /* Assets.xcassets */,
 				BED76F15290F80B2005363B8 /* Instafilter.entitlements */,
 				BED76F16290F80B2005363B8 /* Preview Content */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEC88A0F29121D5800CC9D65 /* ImagePicker.swift in Sources */,
 				BED76F12290F80B1005363B8 /* ContentView.swift in Sources */,
 				BED76F10290F80B1005363B8 /* InstafilterApp.swift in Sources */,
 			);
