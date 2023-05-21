@@ -43,7 +43,7 @@ struct ContentView: View {
                 
                 HStack {
                     Button("Change Filter") {
-                        // change filter
+                        // change filterr
                     }
                     
                     Spacer()
