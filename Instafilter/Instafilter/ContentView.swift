@@ -13,6 +13,9 @@ struct ContentView: View {
     @State private var image: Image?
     @State private var filterIntensity = 0.5
     
+    @State private var showingImagePicker = false
+    @State private var inputImage: UIImage?
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -29,7 +32,7 @@ struct ContentView: View {
                         .scaledToFit()
                 }
                 .onTapGesture {
-                    // select an image
+                    showingImagePicker = true
                 }
                 
                 HStack {
@@ -50,7 +53,16 @@ struct ContentView: View {
             }
             .padding([.horizontal, .bottom])
             .navigationTitle("Instafilter")
+            .onChange(of: inputImage) { _ in loadImage() }
+            .sheet(isPresented: $showingImagePicker) {
+                ImagePicker(image: $inputImage)
+            }
         }
+    }
+    
+    func loadImage() {
+        guard let inputImage = inputImage else { return }
+        image = Image(uiImage: inputImage)
     }
     
     func save() {
