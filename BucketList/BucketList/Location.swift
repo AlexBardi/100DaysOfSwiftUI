@@ -9,7 +9,7 @@ import Foundation
 import CoreLocation
 
 struct Location: Identifiable, Codable, Equatable {
-    let id: UUID
+    var id: UUID // need this to be modifiable so that updated copies can be identified as different
     var name: String
     var description: String
     let latitude: Double
